@@ -1,0 +1,116 @@
+:root {
+    --main-bg-color: black;
+    --primary-color: #8366fa;
+    --body-section-bg-color: #1F2937;
+    --result-section-bg-color: #273549;
+    --font-color: #CCC1FF;
+    --font-color2: #fff;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--font-color2);
+}
+
+.container {
+    max-width: 550px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.head-section {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.head-section h1 {
+    font-size: 20px;
+    text-shadow: 2px 2px var(--body-section-bg-color);
+
+}
+
+#input-num {
+    background-color: var(--primary-color);
+    border: solid 2px var(--font-color);
+    color: var(--font-color2);
+    width: 80px;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px var(--body-section-bg-color);
+    box-shadow: 2px 2px var(--body-section-bg-color);
+}
+
+.body-section {
+    background-color: var(--body-section-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+    border-radius: 5px;
+}
+
+.result-section {
+    background-color: var(--result-section-bg-color);
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 2px black;
+}
+
+.result-section p {
+    font-size: 14px;
+}
+
+.result-section h3 {
+    color: var(--font-color);
+}
+
+.btn {
+    background-color: #CCC1FF;
+    border: 2px solid var(--result-section-bg-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--font-color2);
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 2px 2px var(--body-section-bg-color);
+    box-shadow: 5px 5px var(--body-section-bg-color);
+}
